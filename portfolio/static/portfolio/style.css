@@ -1,0 +1,84 @@
+.home-page {
+    /* background-image: url('images/BG.jpg'); */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.home-content {
+    background: linear-gradient(to bottom, rgba(255, 65, 54, 0.5), rgba(31, 31, 31, 0.8));
+    padding: 3em;
+    border-radius: 50px;
+    max-width: 800px;
+    margin: 4em auto;
+    text-align: center;
+    border: 1px solid #ff4136;
+    box-shadow: 0 0 30px rgba(255, 65, 54, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 45px rgba(255, 65, 54, 0.7);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+nav {
+    background-color: #1f1f1f;
+    padding: 1.5em;
+    border-bottom: 1px solid #ff4136; /* Red accent */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1em;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ff4136; /* Red accent */
+}
+
+.container {
+    padding: 2em;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff4136; /* Red accent */
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.card {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border: 1px solid #333; /* Subtle border */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #ff4136; /* Red accent on hover */
+}

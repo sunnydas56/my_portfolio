@@ -1,0 +1,92 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<style>
+    .experience-section {
+        background-color: #1f1f1f;
+        padding: 2em;
+        border-radius: 8px;
+        margin-bottom: 2em;
+        border: 1px solid #333;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    .experience-section:hover {
+        transform: translateY(-5px);
+        border-color: #ff4136;
+    }
+    .experience-section h2 {
+        color: #ff4136; /* Red accent for headings */
+        border-bottom: 2px solid #ff4136;
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+    }
+    .experience-item {
+        margin-bottom: 1.5em;
+    }
+    .experience-item h4 {
+        color: #ffffff;
+        margin-bottom: 0.2em;
+    }
+    .experience-item p, .experience-item > ul {
+        margin: 0;
+        color: #aaa;
+    }
+    .experience-item > ul {
+        padding-left: 20px; /* Indent list for responsibilities */
+        list-style: disc;
+        margin-top: 0.5em;
+    }
+    .skills-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 0.8em;
+    }
+    .skills-list li {
+        display: inline-block;
+        background-color: #333;
+        color: #ffffff;
+        padding: 0.4em 0.8em;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+        border-radius: 5px;
+        font-size: 0.9em;
+    }
+    .skills-list i {
+        margin-right: 6px;
+        color: #ff4136; /* Icon color */
+    }
+</style>
+
+<div class="experience-section">
+    <h2>Work Experience</h2>
+    <div class="experience-item">
+        <h4>Training & Mentor @ Code Squadz Pvt Ltd, Noida</h4>
+        <p><em>August 2024 – Feb 2025</em></p>
+        <p><strong>Python Full Stack Mentor</strong></p>
+        <ul>
+            <li>Training students in a 6-month Python Full Stack Development program.</li>
+            <li>Mentoring on backend & frontend project building.</li>
+            <li>Guiding real-world project development workflows.</li>
+        </ul>
+        <ul class="skills-list">
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-laptop-code"></i> Django</li>
+            <li><i class="fas fa-cogs"></i> REST API</li>
+            <li><i class="fab fa-react"></i> React</li>
+        </ul>
+    </div>
+</div>
+
+<div class="experience-section">
+    <h2>Internships</h2>
+    <div class="experience-item">
+        <h4>Abris Softech</h4>
+        <p><em>March 2023 – May 2023</em></p>
+        <p>Completed a 2-month internship where I gained hands-on experience in developing web applications using Python and Django.</p>
+        <ul class="skills-list">
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-laptop-code"></i> Django</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

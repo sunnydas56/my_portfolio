@@ -1,0 +1,96 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<style>
+    .project-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2em;
+    }
+
+    .card {
+        background-color: #1f1f1f;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #333;
+        transition: transform 0.3s, border-color 0.3s;
+        display: flex;
+        flex-direction: column; /* Ensure cards are laid out in a column */
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        border-color: #ff4136;
+    }
+
+    .card-content {
+        padding: 1.5em;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1; /* Allows this section to grow and fill space */
+    }
+
+    .project-title {
+        color: #ff4136;
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    .card-content p {
+        flex-grow: 1; /* Pushes the button to the bottom */
+    }
+
+    .view-btn {
+        display: inline-block;
+        margin-top: 1em;
+        padding: 0.6em 1.2em;
+        background-color: #ff4136;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        align-self: flex-start; /* Align button to the start of the flex container */
+    }
+
+    .view-btn:hover {
+        background-color: #e03024;
+    }
+</style>
+
+<h1>My Projects</h1>
+<div class="project-cards">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200/1f1f1f/ff4136?text=Project+Alpha" alt="Project Alpha">
+        <div class="card-content">
+            <h2 class="project-title">E-commerce Platform</h2>
+            <p>A full-featured e-commerce site built with Django, featuring product management, a shopping cart, and a secure checkout process.</p>
+            <a href="#" class="view-btn">View on GitHub</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200/1f1f1f/ff4136?text=Project+Beta" alt="Project Beta">
+        <div class="card-content">
+            <h2 class="project-title">Task Management API</h2>
+            <p>A RESTful API developed with Django REST Framework for managing tasks and to-do lists, complete with user authentication.</p>
+            <a href="#" class="view-btn">View on GitHub</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200/1f1f1f/ff4136?text=Project+Gamma" alt="Project Gamma">
+        <div class="card-content">
+            <h2 class="project-title">Portfolio Website</h2>
+            <p>A personal portfolio site (like this one) to showcase projects and skills, built with Django and a responsive front-end.</p>
+            <a href="#" class="view-btn">View on GitHub</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200/1f1f1f/ff4136?text=Weather+App" alt="Weather Forecast Web Application">
+        <div class="card-content">
+            <h2 class="project-title">Weather Forecast Web Application</h2>
+            <p>Built a responsive weather forecasting web app using Python and Django for backend logic and HTML/CSS for the user interface. Integrated OpenWeatherMap API to fetch real-time weather data based on city input by the user.</p>
+            <a href="#" class="view-btn">View on GitHub</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

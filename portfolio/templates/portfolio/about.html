@@ -1,0 +1,54 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<style>
+    .about-section {
+        background-color: #1f1f1f;
+        padding: 2em;
+        border-radius: 8px;
+        margin-bottom: 2em;
+        border: 1px solid #333;
+    }
+    .about-section h2 {
+        color: #ff4136; /* Red accent for headings */
+        border-bottom: 2px solid #ff4136;
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+    }
+    .interests-list {
+        list-style: none;
+        padding: 0;
+    }
+    .interests-list li {
+        background-color: #333;
+        color: #ffffff;
+        padding: 0.8em 1.2em;
+        margin-bottom: 0.5em;
+        border-radius: 5px;
+        border-left: 4px solid #ff4136;
+    }
+</style>
+
+<div class="about-section">
+    <h2>About Me</h2>
+    <p>My name is Om Prakash, but you can simply call me Om.</p>
+    <p>I am a passionate Full Stack Developer with a strong foundation in both front-end and back-end technologies. With a solid background in Python, HTML, CSS, and React.js, I excel at creating dynamic, user-friendly websites and applications. My expertise extends to using frameworks like Django for backend development and React for building interactive and responsive user interfaces.</p>
+    <p>I thrive on problem-solving and am always eager to learn new technologies to build scalable and optimized solutions. My goal is to deliver high-quality projects across the full stack and contribute to a forward-thinking team.</p>
+</div>
+
+<div class="about-section">
+    <h2>Interests & Focus</h2>
+    <ul class="interests-list">
+        <li>Full Stack Development</li>
+        <li>Building RESTful APIs with Django REST Framework</li>
+        <li>Creating interactive UIs with React.js</li>
+        <li>Database Design and Optimization</li>
+        <li>Version Control with Git</li>
+    </ul>
+</div>
+
+<div class="about-section">
+  <h2>Background</h2>
+  <p>I recently completed my Bachelor of Technology (B.Tech) and have practical experience from an internship and a Python Full Stack training program, which have equipped me with a strong set of technical skills for the industry.</p>
+</div>
+{% endblock %}
