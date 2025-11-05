@@ -15,4 +15,4 @@ This is my personal portfolio website built using **Python and Django**, showcas
 
   Check the live website here
   
-  https://my-portfolio-2-6gop.onrender.com/
+  "https://personal-portfolio-website-6wm2.onrender.com"
